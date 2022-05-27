@@ -424,13 +424,40 @@ a {
 /* grid container for projects */
 #works-container {
     display: grid;
-    grid-template-columns: 5vw 5vw 5vw; 
-    grid-template-rows: 5vw 5vw 5vw;
-    grid-column-gap: 2vw;
-    margin-top: 1vw;
+    justify-content: center;
+    margin-top: 3vw;
+    grid-template-columns: 33vw 33.5vw; 
+    grid-template-rows: auto auto;
+    grid-gap: 2vw;
 }
 
-.container1 {
-    display: grid;
-    border: 2px solid black;
+.container3 {
+    background:rgb(0,0,0,0.8);
 }
+
+.project-tile {
+    font-family: Roboto Slab;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .jersey-img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .into-the-void {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    #works-container {
+        grid-template-columns: 60vw; 
+        grid-template-rows: auto auto;
+        width: 100%;
+        justify-items: center;
+    }
+  }
